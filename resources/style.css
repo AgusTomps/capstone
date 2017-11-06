@@ -5,6 +5,10 @@
   color: #4a4a4a;
 }
 
+body{
+  width: 1430px;
+}
+
 h1{
   font-size: 50px;
 }
@@ -22,6 +26,13 @@ h4{
   font-size: 18px;
 }
 
+p{
+  font-size: 20px;
+}
+
+li{
+  font-size: 20px;
+}
 
 /* This is the HEADER section, contains LOGO and NAVIGATION */
 
@@ -30,10 +41,9 @@ h4{
   justify-content: space-between;
   height: 64px;
   align-items: center;
-  width: 1430px;
 }
 
-/* lOGO */
+/* lOGO ---------- */
 
 .header .logo{
   display: flex;
@@ -57,7 +67,7 @@ h4{
   color: #d8d8d8;
 }
 
-/* NAVIGATION */
+/* NAVIGATION ---------- */
 
 .header nav{
   display: flex;
@@ -68,6 +78,7 @@ h4{
 .header nav ul{
   display: flex;
   justify-content: space-between;
+  width: 450px;
 }
 
 .header nav ul li{
@@ -79,14 +90,17 @@ h4{
 .learn-something{
   display: flex;
   align-items: center;
-  width: 1430px;
   background-color: #d8d8d8;
 }
 
-/* BANNER */
+/* BANNER ---------- */
+
+.learn-something{
+  padding: 32px 24px;
+}
 
 .learn-something .banner{
-  margin: 32px 24px;
+  margin-right: 48px;
   width: 60%;
 }
 
@@ -94,7 +108,7 @@ h4{
   width: 100%;
 }
 
-/* CALL-TO-ACTION */
+/* CALL-TO-ACTION ---------- */
 
 .call-to-action{
   display: flex;
@@ -129,16 +143,20 @@ h4{
 
 .keep-practicing{
   display: flex;
-  width: 1430px;
+  justify-content: center;
 }
 
-/* SOCIAL-PROOF */
+/* SOCIAL-PROOF ---------- */
+
+.keep-practicing{
+  padding: 32px 0px 32px 24px;
+}
 
 .keep-practicing .social-proof{
   display: flex;
   flex-direction: column;
   width: 60%;
-  margin: 32px 24px 0px 24px;
+  margin-right: 24px;
 }
 
 .keep-practicing .social-proof .image img{
@@ -157,10 +175,10 @@ h4{
   margin: 0px 0px 32px 0px;
 }
 
-/* ARTICLES */
+/* ARTICLES ---------- */
 
 .keep-practicing .articles{
-  width: 36%;
+  width: 40%;
   padding-top: 32px;
   border-left: 1px solid #d8d8d8;
   margin: 0px;
@@ -221,22 +239,21 @@ h4{
 /* This is the START-LEARNING section , contains TITLE and CATEGORIES */
 
 .start-learning{
-  width: 1430px;
   display: flex;
   flex-direction: column;
   background-color: #eaebec;
   justify-content: center;
   align-items: center;
-  padding-bottom: 16px;
+  padding: 32px 72px;
 }
 
-/* TITLE */
+/* TITLE ---------- */
 
 .start-learning .title h2{
-  margin: 32px;
+  margin: 0px 0px 32px 0px;
 }
 
-/* CATEGORIES */
+/* CATEGORIES ----------- */
 
 .start-learning .categories{
 display: flex;
@@ -246,7 +263,11 @@ width: 100%;
 
 .start-learning .categories .top-container, .bot-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.start-learning .categories .top-container{
+  margin-bottom: 32px;
 }
 
 .start-learning .categories .software-engineering,
@@ -255,33 +276,131 @@ width: 100%;
 .data,
 .business,
 .marketing{
-  width:26%;
-  margin: 16px;
+  width:100%;
+  background-color: white;
 }
 
-.start-learning .categories .image{
-  margin: 0px;
-  height: 189.067px;
+.start-learning .categories .computer-art, .business{
+  margin: 0px 32px;
 }
 
 .start-learning .categories .image img{
   width: 100%;
-  margin: 0px;
 }
 
 .start-learning .categories .text{
   background-color: white;
-  margin: 0px;
-  height: 200px;
+  height: 150px;
+  padding: 16px 16px 24px 16px;
 }
 
-.start-learning .categories .text h3{
+.start-learning .categories .text h3, .all-courses p{
   margin: 0px;
+  padding: 0px 0px 0px 16px;
+}
+
+.start-learning .categories .text .courses p{
+  padding: 8px 16px;
+  margin: 0px;
+}
+
+/* This is the THESIS-EXHIBIT section , contains TITLE and ALL-THESIS */
+
+.thesis-exhibit{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TITLE ---------- */
+
+.thesis-exhibit .title h2{
+  margin: 32px;
+}
+
+/* ALL-THESIS ---------- */
+
+.thesis-exhibit .all-thesis{
+  display: flex;
+  padding-bottom: 32px;
+}
+
+/* reimagine */
+
+.thesis-exhibit .all-thesis .reimagine{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0px 24px;
+}
+
+.thesis-exhibit .all-thesis .reimagine .video video{
+  width: 100%;
+  margin: 0px
+}
+
+.thesis-exhibit .all-thesis .reimagine .subtitle h3{
+  margin: 24px 0px 8px 0px;
+}
+
+.thesis-exhibit .all-thesis .reimagine .description p{
+  margin: 0px;
+}
+
+/* more-thesis */
+.thesis-exhibit .all-thesis .more-thesis{
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-exhibit .all-thesis .more-thesis .fisma, .now-and-then{
+  display: flex;
   padding: 16px;
 }
 
-.start-learning .categories .text p{
-  padding: 8px 16px;
+.thesis-exhibit .all-thesis .more-thesis .fisma{
+  background-color: #d8d8d8;
+}
+
+.thesis-exhibit .all-thesis .more-thesis .image{
+  width: 35%;
+  margin-right: 16px;
+}
+
+.thesis-exhibit .all-thesis .more-thesis .image img{
+  width: 100%;
+}
+
+.thesis-exhibit .all-thesis .more-thesis .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 16px;
+}
+
+.thesis-exhibit .all-thesis .more-thesis .text p{
   margin: 0px;
-  font-size: 20px;
+}
+
+.thesis-exhibit .all-thesis .more-thesis .text h3{
+  margin-bottom: 8px;
+}
+
+/* This is the FOOTER section */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 50px 24px;
+  border-top: 1px solid #d8d8d8
+}
+
+.footer .privacy-terms ul{
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.footer .privacy-terms ul li{
+list-style: none;
 }
