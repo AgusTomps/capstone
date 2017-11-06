@@ -1,0 +1,287 @@
+/* Global settings */
+
+*{
+  font-family: sans-serif;
+  color: #4a4a4a;
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 42px;
+}
+
+h3{
+  font-size: 26px;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 18px;
+}
+
+
+/* This is the HEADER section, contains LOGO and NAVIGATION */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+  width: 1430px;
+}
+
+/* lOGO */
+
+.header .logo{
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.header .logo .image img{
+  height: 32px;
+}
+
+.header .logo .text{
+
+}
+
+.header .logo .text .colmar{
+  font-weight: 700;
+}
+
+.header .logo .text .academy{
+  color: #d8d8d8;
+}
+
+/* NAVIGATION */
+
+.header nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 24px;
+}
+.header nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav ul li{
+  display: inline-flex;
+  padding-left: 8px;
+}
+
+/* This is the LEARN-SOMETHING section , contains BANNER and CALL-TO-ACTION */
+.learn-something{
+  display: flex;
+  align-items: center;
+  width: 1430px;
+  background-color: #d8d8d8;
+}
+
+/* BANNER */
+
+.learn-something .banner{
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.learn-something .banner img{
+  width: 100%;
+}
+
+/* CALL-TO-ACTION */
+
+.call-to-action{
+  display: flex;
+  flex-direction: column;
+  width: 28.5%;
+}
+
+.call-to-action .slogan h1{
+  margin: 0px;
+}
+
+.call-to-action .explain-slogan h3{
+  margin: 24px 0px;
+}
+
+.call-to-action .start{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: #4a4a4a;
+  justify-content: center;
+
+}
+
+.call-to-action .start h4{
+  margin: 0px;
+  padding: 8px 0px;
+  color: white;
+}
+
+/* This is the KEEP-PRACTICING section , contains SOCIAL-PROOF and ARTICLES */
+
+.keep-practicing{
+  display: flex;
+  width: 1430px;
+}
+
+/* SOCIAL-PROOF */
+
+.keep-practicing .social-proof{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 32px 24px 0px 24px;
+}
+
+.keep-practicing .social-proof .image img{
+  width: 100%;
+}
+
+.keep-practicing .social-proof .title h2{
+  margin: 32px 0px 0px 0px;
+}
+
+.keep-practicing .social-proof .quote p{
+  margin: 24px 0px;
+}
+
+.keep-practicing .social-proof .author p{
+  margin: 0px 0px 32px 0px;
+}
+
+/* ARTICLES */
+
+.keep-practicing .articles{
+  width: 36%;
+  padding-top: 32px;
+  border-left: 1px solid #d8d8d8;
+  margin: 0px;
+}
+
+.keep-practicing .articles .orientation,
+.campus,
+.guest-lecture{
+  display: flex;
+}
+
+.keep-practicing .articles .orientation{
+  margin: 2px;
+  padding: 0px 16px 16px 16px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.keep-practicing .articles .campus{
+  margin: 2px;
+  padding: 16px;
+  border-top: 1px solid #d8d8d8;
+}
+
+.keep-practicing .articles .guest-lecture{
+  padding: 16px;
+  background-color: #d8d8d8;
+}
+
+.keep-practicing .articles .image{
+  width: 35%;
+}
+
+.keep-practicing .articles .image img{
+  width: 100%;
+}
+
+.keep-practicing .articles .text{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 16px;
+}
+
+.keep-practicing .articles .text .title h3{
+  margin: 0px;
+}
+
+.keep-practicing .articles .text .description p{
+  margin: 8px 0px;
+}
+
+.keep-practicing .articles .text .read-more p{
+  margin: 0px;
+  color: blue;
+}
+
+/* This is the START-LEARNING section , contains TITLE and CATEGORIES */
+
+.start-learning{
+  width: 1430px;
+  display: flex;
+  flex-direction: column;
+  background-color: #eaebec;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+/* TITLE */
+
+.start-learning .title h2{
+  margin: 32px;
+}
+
+/* CATEGORIES */
+
+.start-learning .categories{
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.start-learning .categories .top-container, .bot-container{
+  display: flex;
+  justify-content: center;
+}
+
+.start-learning .categories .software-engineering,
+.computer-art,
+.design,
+.data,
+.business,
+.marketing{
+  width:26%;
+  margin: 16px;
+}
+
+.start-learning .categories .image{
+  margin: 0px;
+  height: 189.067px;
+}
+
+.start-learning .categories .image img{
+  width: 100%;
+  margin: 0px;
+}
+
+.start-learning .categories .text{
+  background-color: white;
+  margin: 0px;
+  height: 200px;
+}
+
+.start-learning .categories .text h3{
+  margin: 0px;
+  padding: 16px;
+}
+
+.start-learning .categories .text p{
+  padding: 8px 16px;
+  margin: 0px;
+  font-size: 20px;
+}
